@@ -38,6 +38,134 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rosidl_interfaces" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/turtle_tracker")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_c/turtle_tracker/" REGEX "/[^/]*\\.h$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_generator_c.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_c.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_c.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_c.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_typesupport_fastrtps_c/turtle_tracker/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_cpp/turtle_tracker/" REGEX "/[^/]*\\.hpp$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_typesupport_fastrtps_cpp/turtle_tracker/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_typesupport_introspection_c/turtle_tracker/" REGEX "/[^/]*\\.h$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_introspection_c.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_c.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_c.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_c.dylib")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_c.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_c.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/turtle_tracker/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_typesupport_introspection_cpp/turtle_tracker/" REGEX "/[^/]*\\.hpp$")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/libturtle_tracker__rosidl_typesupport_cpp.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_cpp.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_cpp.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_typesupport_cpp.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/environment" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_environment_hooks/pythonpath.sh")
 endif()
 
@@ -46,11 +174,11 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker-0.1.0-py3.11.egg-info" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_python/turtle_tracker/turtle_tracker.egg-info/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_python/turtle_tracker/turtle_tracker.egg-info/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -61,18 +189,127 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
       )
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/turtle_tracker__py/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/launch" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker"
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_c__pyext.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker"
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_c__pyext.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker"
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/turtle_tracker__rosidl_typesupport_c__pyext.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/libturtle_tracker__rosidl_generator_py.dylib")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_py.dylib" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_py.dylib")
+    execute_process(COMMAND /Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool
+      -delete_rpath "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_py.dylib")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libturtle_tracker__rosidl_generator_py.dylib")
+    endif()
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/srv" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_adapter/turtle_tracker/srv/TurtleInfo.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/action" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_adapter/turtle_tracker/action/TurtleInfoAction.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/srv" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/srv/TurtleInfo.srv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/srv" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_cmake/srv/TurtleInfo_Request.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/srv" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_cmake/srv/TurtleInfo_Response.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/action" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/action/TurtleInfoAction.action")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtle_tracker" TYPE PROGRAM FILES
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/spawn_explorer"
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/explorer_follower"
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/state_server"
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/turtle_info_client"
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker/turtle_info_action_client"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_spawner.py"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_tracker.py"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_info_service.py"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_info_client.py"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_info_action_server.py"
+    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/scripts/turtle_info_action_client.py"
     )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker" TYPE DIRECTORY FILES "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/launch")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -121,6 +358,238 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_index/share/ament_index/resource_index/packages/turtle_tracker")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_cExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_cExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cppExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_cppExport.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_introspection_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cppExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cppExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/turtle_tracker__rosidl_typesupport_cppExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport.cmake")
+    file(DIFFERENT _cmake_export_file_changed FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport.cmake"
+         "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_pyExport.cmake")
+    if(_cmake_export_file_changed)
+      file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport-*.cmake")
+      if(_cmake_old_config_files)
+        string(REPLACE ";" ", " _cmake_old_config_files_text "${_cmake_old_config_files}")
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport.cmake\" will be replaced.  Removing files [${_cmake_old_config_files_text}].")
+        unset(_cmake_old_config_files_text)
+        file(REMOVE ${_cmake_old_config_files})
+      endif()
+      unset(_cmake_old_config_files)
+    endif()
+    unset(_cmake_export_file_changed)
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_pyExport.cmake")
+  if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/CMakeFiles/Export/a4162e7321760008a8a29dade6e596f2/export_turtle_tracker__rosidl_generator_pyExport-noconfig.cmake")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_cmake/rosidl_cmake-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtle_tracker/cmake" TYPE FILE FILES "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

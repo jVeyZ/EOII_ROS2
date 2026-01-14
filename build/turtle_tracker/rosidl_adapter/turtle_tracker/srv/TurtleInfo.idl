@@ -1,0 +1,53 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtle_tracker/srv/TurtleInfo.srv
+// generated code does not contain a copyright notice
+
+
+module turtle_tracker {
+  module srv {
+    @verbatim (language="comment", text=
+      "Servicio TurtleInfo" "\n"
+      "Proporciona información sobre las tortugas turtle1 y explorer")
+    struct TurtleInfo_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Response" "\n"
+      "Posición y orientación de turtle1")
+    struct TurtleInfo_Response {
+      double turtle1_x;
+
+      double turtle1_y;
+
+      double turtle1_theta;
+
+      @verbatim (language="comment", text=
+        "Posición y orientación de explorer")
+      double explorer_x;
+
+      double explorer_y;
+
+      double explorer_theta;
+
+      @verbatim (language="comment", text=
+        "Velocidades de turtle1")
+      double turtle1_linear_vel;
+
+      double turtle1_angular_vel;
+
+      @verbatim (language="comment", text=
+        "Velocidades de explorer")
+      double explorer_linear_vel;
+
+      double explorer_angular_vel;
+
+      @verbatim (language="comment", text=
+        "Distancia euclidiana entre ambas tortugas")
+      double distance;
+
+      @verbatim (language="comment", text=
+        "Timestamp de la información")
+      string timestamp;
+    };
+  };
+};

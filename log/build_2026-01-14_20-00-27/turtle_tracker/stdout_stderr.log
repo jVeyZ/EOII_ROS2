@@ -1,0 +1,309 @@
+-- The C compiler identification is Clang 19.1.7
+-- The CXX compiler identification is Clang 19.1.7
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/riftka221/.local/share/mamba/envs/ros_env/bin/arm64-apple-darwin20.0.0-clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake/cmake)
+-- Found Python3: /Users/riftka221/.local/share/mamba/envs/ros_env/bin/python3 (found version "3.11.14") found components: Interpreter
+-- Found rclpy: 3.3.16 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/rclpy/cmake)
+-- Found std_msgs: 4.9.0 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found geometry_msgs: 4.9.0 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/geometry_msgs/cmake)
+-- Found turtlesim: 1.4.2 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/turtlesim/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.10.0 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/python_cmake_module/cmake)
+CMake Warning (dev) at /Users/riftka221/.local/share/mamba/envs/ros_env/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:22 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PythonInterp: /Users/riftka221/.local/share/mamba/envs/ros_env/bin/python3 (found suitable version "3.11.14", minimum required is "3.6")
+-- Using PythonExtra_INCLUDE_DIRS: /Users/riftka221/.local/share/mamba/envs/ros_env/include/python3.11;/Users/riftka221/.local/share/mamba/envs/ros_env/include/python3.11
+-- Using PythonExtra_LIBRARIES: /Users/riftka221/.local/share/mamba/envs/ros_env/lib/libpython3.11.dylib
+-- Found PythonExtra: .so
+-- Found Python: /Users/riftka221/.local/share/mamba/envs/ros_env/bin/python3 (found version "3.11.14") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Found ament_lint_auto: 0.12.12 (/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (4.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker
+[  2%] Generating C code for ROS interfaces
+[  5%] Generating C++ code for ROS interfaces
+[  5%] Built target ament_cmake_python_copy_turtle_tracker
+running egg_info
+creating turtle_tracker.egg-info
+writing turtle_tracker.egg-info/PKG-INFO
+writing dependency_links to turtle_tracker.egg-info/dependency_links.txt
+writing top-level names to turtle_tracker.egg-info/top_level.txt
+writing manifest file 'turtle_tracker.egg-info/SOURCES.txt'
+reading manifest file 'turtle_tracker.egg-info/SOURCES.txt'
+writing manifest file 'turtle_tracker.egg-info/SOURCES.txt'
+[  5%] Built target ament_cmake_python_build_turtle_tracker_egg
+[  5%] Built target turtle_tracker__cpp
+[  7%] Building C object CMakeFiles/turtle_tracker__rosidl_generator_c.dir/rosidl_generator_c/turtle_tracker/action/detail/turtle_info_action__functions.c.o
+[ 10%] Building C object CMakeFiles/turtle_tracker__rosidl_generator_c.dir/rosidl_generator_c/turtle_tracker/srv/detail/turtle_info__functions.c.o
+[ 12%] Generating C++ type support for eProsima Fast-RTPS
+[ 15%] Generating C++ type support dispatch for ROS interfaces
+[ 17%] Generating C++ introspection for ROS interfaces
+[ 20%] Linking C shared library libturtle_tracker__rosidl_generator_c.dylib
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[ 20%] Built target turtle_tracker__rosidl_generator_c
+[ 23%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_tracker/srv/turtle_info__type_support.cpp.o
+[ 25%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/turtle_tracker/action/turtle_info_action__type_support.cpp.o
+[ 28%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_tracker/action/detail/turtle_info_action__type_support.cpp.o
+[ 30%] Generating C type support for eProsima Fast-RTPS
+[ 33%] Generating C introspection for ROS interfaces
+[ 35%] Generating C type support dispatch for ROS interfaces
+[ 38%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/turtle_tracker/srv/detail/turtle_info__type_support.cpp.o
+[ 41%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_tracker/srv/detail/dds_fastrtps/turtle_info__type_support.cpp.o
+[ 43%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtle_tracker/srv/turtle_info__type_support.cpp.o
+[ 46%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_c.dir/rosidl_typesupport_c/turtle_tracker/action/turtle_info_action__type_support.cpp.o
+[ 48%] Building C object CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtle_tracker/srv/detail/turtle_info__type_support.c.o
+[ 51%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/turtle_tracker/action/detail/dds_fastrtps/turtle_info_action__type_support.cpp.o
+[ 53%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtle_tracker/srv/detail/turtle_info__type_support_c.cpp.o
+[ 56%] Building C object CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/turtle_tracker/action/detail/turtle_info_action__type_support.c.o
+[ 58%] Linking CXX shared library libturtle_tracker__rosidl_typesupport_c.dylib
+[ 61%] Building CXX object CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtle_tracker/action/detail/turtle_info_action__type_support_c.cpp.o
+[ 64%] Linking C shared library libturtle_tracker__rosidl_typesupport_introspection_c.dylib
+[ 66%] Linking CXX shared library libturtle_tracker__rosidl_typesupport_cpp.dylib
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[ 66%] Built target turtle_tracker__rosidl_typesupport_c
+[ 66%] Built target turtle_tracker__rosidl_typesupport_introspection_c
+[ 66%] Built target turtle_tracker__rosidl_typesupport_cpp
+[ 69%] Linking CXX shared library libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[ 69%] Built target turtle_tracker__rosidl_typesupport_introspection_cpp
+[ 71%] Linking CXX shared library libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib
+[ 74%] Linking CXX shared library libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[ 74%] Built target turtle_tracker__rosidl_typesupport_fastrtps_cpp
+[ 74%] Built target turtle_tracker__rosidl_typesupport_fastrtps_c
+[ 74%] Built target turtle_tracker
+[ 76%] Generating Python code for ROS interfaces
+[ 76%] Built target turtle_tracker__py
+[ 82%] Building C object CMakeFiles/turtle_tracker__rosidl_generator_py.dir/rosidl_generator_py/turtle_tracker/action/_turtle_info_action_s.c.o
+[ 82%] Building C object CMakeFiles/turtle_tracker__rosidl_generator_py.dir/rosidl_generator_py/turtle_tracker/srv/_turtle_info_s.c.o
+[ 84%] Linking C shared library rosidl_generator_py/turtle_tracker/libturtle_tracker__rosidl_generator_py.dylib
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[ 84%] Built target turtle_tracker__rosidl_generator_py
+[ 87%] Building C object CMakeFiles/turtle_tracker__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[ 89%] Building C object CMakeFiles/turtle_tracker__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_introspection_c.c.o
+[ 92%] Building C object CMakeFiles/turtle_tracker__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_c.c.o
+[ 94%] Linking C shared library rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so
+[ 97%] Linking C shared library rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so
+[100%] Linking C shared library rosidl_generator_py/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'ld: warning: 
+directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+[100%] Built target turtle_tracker__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target turtle_tracker__rosidl_typesupport_introspection_c__pyext
+[100%] Built target turtle_tracker__rosidl_typesupport_c__pyext
+-- Install configuration: ""
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/ament_index/resource_index/rosidl_interfaces/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__functions.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__struct.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__type_support.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__functions.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/turtle_info_action.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__type_support.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__struct.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__functions.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__functions.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/turtle_info.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_c.dylib
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__rosidl_typesupport_fastrtps_c.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib'
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/turtle_info_action.hpp
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__struct.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__builder.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__type_support.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__traits.hpp
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__traits.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__struct.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__type_support.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__builder.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/turtle_info.hpp
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/dds_fastrtps
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/dds_fastrtps
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_cpp.dylib
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__type_support.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__rosidl_typesupport_introspection_c.h
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__type_support.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib'
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_c.dylib
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_c.dylib'
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__type_support.cpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/action/detail/turtle_info_action__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/include/turtle_tracker/turtle_tracker/srv/detail/turtle_info__type_support.cpp
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_cpp.dylib
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_cpp.dylib
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/pythonpath.sh
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/pythonpath.dsv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info/PKG-INFO
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info/SOURCES.txt
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info/top_level.txt
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker-1.0.0-py3.11.egg-info/dependency_links.txt
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_c.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/__init__.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/libturtle_tracker__rosidl_generator_py.dylib
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/action
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/action/__init__.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/action/_turtle_info_action.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/action/_turtle_info_action_s.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/_turtle_tracker_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/srv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/srv/_turtle_info_s.c
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/srv/__init__.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/srv/_turtle_info.py
+Listing 'lib/python3.11/site-packages/turtle_tracker'...
+Can't list 'lib/python3.11/site-packages/turtle_tracker'
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so'
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so'
+-- Up-to-date: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so'
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_py.dylib
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_py.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_py.dylib'
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/srv/TurtleInfo.idl
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/action/TurtleInfoAction.idl
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/srv/TurtleInfo.srv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/srv/TurtleInfo_Request.msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/srv/TurtleInfo_Response.msg
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/action/TurtleInfoAction.action
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_spawner.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_tracker.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_info_service.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_info_client.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_info_action_server.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/turtle_tracker/turtle_info_action_client.py
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/launch
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/launch/launch_with_action.xml
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/launch/launch.xml
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/ament_index/resource_index/package_run_dependencies/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/ament_index/resource_index/parent_prefix_path/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/ament_prefix_path.sh
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/ament_prefix_path.dsv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/path.sh
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/environment/path.dsv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/local_setup.bash
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/local_setup.sh
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/local_setup.zsh
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/local_setup.dsv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/package.dsv
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/ament_index/resource_index/packages/turtle_tracker
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_cppExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_tracker__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/export_turtle_tracker__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/rosidl_cmake-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_trackerConfig.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/cmake/turtle_trackerConfig-version.cmake
+-- Installing: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/share/turtle_tracker/package.xml

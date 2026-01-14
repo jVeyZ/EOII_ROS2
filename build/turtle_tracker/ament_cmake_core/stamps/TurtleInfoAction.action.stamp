@@ -1,0 +1,37 @@
+# Action TurtleInfoAction
+# Retorna periódicamente información de las tortugas hasta que explorer alcance a turtle1
+
+# Goal (vacío o con parámetros opcionales)
+float64 update_rate  # Frecuencia de actualización en Hz (por defecto 1.0)
+float64 catch_distance  # Distancia para considerar que explorer alcanzó a turtle1 (default 0.5)
+---
+# Result - Información final cuando explorer alcanza a turtle1
+bool success
+string message
+float64 final_distance
+float64 total_time
+---
+# Feedback - Información periódica de las tortugas
+# Posición y orientación de turtle1
+float64 turtle1_x
+float64 turtle1_y
+float64 turtle1_theta
+
+# Posición y orientación de explorer
+float64 explorer_x
+float64 explorer_y
+float64 explorer_theta
+
+# Velocidades de turtle1
+float64 turtle1_linear_vel
+float64 turtle1_angular_vel
+
+# Velocidades de explorer
+float64 explorer_linear_vel
+float64 explorer_angular_vel
+
+# Distancia euclidiana entre ambas tortugas
+float64 distance
+
+# Timestamp
+string timestamp

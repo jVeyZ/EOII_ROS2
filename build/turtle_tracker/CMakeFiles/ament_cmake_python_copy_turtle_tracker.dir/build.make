@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_turtle_tracker.dir/compiler_depend.ma
 include CMakeFiles/ament_cmake_python_copy_turtle_tracker.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_turtle_tracker:
-	/Users/riftka221/.local/share/mamba/envs/ros_env/bin/cmake -E copy_directory /Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker/turtle_tracker /Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_python/turtle_tracker/turtle_tracker
+	/Users/riftka221/.local/share/mamba/envs/ros_env/bin/cmake -E copy_directory /Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker /Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/ament_cmake_python/turtle_tracker/turtle_tracker
 
 CMakeFiles/ament_cmake_python_copy_turtle_tracker.dir/codegen:
 .PHONY : CMakeFiles/ament_cmake_python_copy_turtle_tracker.dir/codegen

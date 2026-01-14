@@ -1,7 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/cmake_install.cmake"
+		"/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/cmake_install.cmake",
+		"/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/turtle_tracker__py/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

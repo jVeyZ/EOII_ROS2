@@ -1,0 +1,71 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from turtle_tracker/action/TurtleInfoAction.action
+// generated code does not contain a copyright notice
+
+
+module turtle_tracker {
+  module action {
+    @verbatim (language="comment", text=
+      "Action TurtleInfoAction" "\n"
+      "Retorna periódicamente información de las tortugas hasta que explorer alcance a turtle1")
+    struct TurtleInfoAction_Goal {
+      @verbatim (language="comment", text=
+        "Goal (vacío o con parámetros opcionales)" "\n"
+        "Frecuencia de actualización en Hz (por defecto 1.0)")
+      double update_rate;
+
+      @verbatim (language="comment", text=
+        "Distancia para considerar que explorer alcanzó a turtle1 (default 0.5)")
+      double catch_distance;
+    };
+    @verbatim (language="comment", text=
+      "Result - Información final cuando explorer alcanza a turtle1")
+    struct TurtleInfoAction_Result {
+      boolean success;
+
+      string message;
+
+      double final_distance;
+
+      double total_time;
+    };
+    @verbatim (language="comment", text=
+      "Feedback - Información periódica de las tortugas" "\n"
+      "Posición y orientación de turtle1")
+    struct TurtleInfoAction_Feedback {
+      double turtle1_x;
+
+      double turtle1_y;
+
+      double turtle1_theta;
+
+      @verbatim (language="comment", text=
+        "Posición y orientación de explorer")
+      double explorer_x;
+
+      double explorer_y;
+
+      double explorer_theta;
+
+      @verbatim (language="comment", text=
+        "Velocidades de turtle1")
+      double turtle1_linear_vel;
+
+      double turtle1_angular_vel;
+
+      @verbatim (language="comment", text=
+        "Velocidades de explorer")
+      double explorer_linear_vel;
+
+      double explorer_angular_vel;
+
+      @verbatim (language="comment", text=
+        "Distancia euclidiana entre ambas tortugas")
+      double distance;
+
+      @verbatim (language="comment", text=
+        "Timestamp")
+      string timestamp;
+    };
+  };
+};

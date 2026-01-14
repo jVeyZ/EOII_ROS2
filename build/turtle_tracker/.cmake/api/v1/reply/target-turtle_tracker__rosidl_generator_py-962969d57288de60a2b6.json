@@ -1,0 +1,693 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "rosidl_generator_py/turtle_tracker/libturtle_tracker__rosidl_generator_py.dylib"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"install",
+			"target_link_libraries",
+			"add_dependencies",
+			"set_target_properties",
+			"set_lib_properties",
+			"add_definitions",
+			"find_package",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 291,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 201,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 4,
+				"parent" : 13
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 130,
+				"parent" : 14
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 5,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 132,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 130,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 132,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 280,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 130,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 132,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 130,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 132,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 130,
+				"parent" : 14
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 132,
+				"parent" : 17
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 137,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 182,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 283,
+				"parent" : 4
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 168,
+				"parent" : 30
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 8,
+				"parent" : 32
+			},
+			{
+				"command" : 10,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 33
+			},
+			{
+				"file" : 7,
+				"parent" : 34
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 41,
+				"parent" : 35
+			},
+			{
+				"file" : 6,
+				"parent" : 36
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 25,
+				"parent" : 37
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 4
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 195,
+				"parent" : 4
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "turtle_tracker__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "std_msgs::std_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "builtin_interfaces::builtin_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "geometry_msgs::geometry_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "action_msgs::action_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-ftree-vectorize -fPIC -fstack-protector-strong -O2 -pipe -isystem /Users/riftka221/.local/share/mamba/envs/ros_env/include -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 31,
+					"fragment" : "-Wextra"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 38,
+					"define" : "ROS_PACKAGE_NAME=\"turtle_tracker\""
+				},
+				{
+					"define" : "turtle_tracker__rosidl_generator_py_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 39,
+					"path" : "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/python3.11/site-packages/numpy/_core/include"
+				},
+				{
+					"backtrace" : 40,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/python3.11"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/std_msgs"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/rcutils"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/geometry_msgs"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/action_msgs"
+				},
+				{
+					"backtrace" : 11,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/include/unique_identifier_msgs"
+				},
+				{
+					"backtrace" : 12,
+					"isSystem" : true,
+					"path" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/python3.11/site-packages/numpy/core/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "turtle_tracker__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "turtle_tracker__py::@6a97952fdd50d93715d0"
+		}
+	],
+	"id" : "turtle_tracker__rosidl_generator_py::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker"
+		}
+	},
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "std_msgs::std_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "builtin_interfaces::builtin_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "geometry_msgs::geometry_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "action_msgs::action_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "std_msgs::std_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "builtin_interfaces::builtin_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "geometry_msgs::geometry_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "action_msgs::action_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		}
+	],
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-dynamiclib -Wl,-headerpad_max_install_names",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/riftka221/.local/share/mamba/envs/ros_env/lib -L/Users/riftka221/.local/share/mamba/envs/ros_env/lib -L/opt/homebrew/Cellar/libusb/1.0.27/lib",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-undefined dynamic_lookup",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "libturtle_tracker__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libgeometry_msgs__rosidl_generator_py.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libaction_msgs__rosidl_generator_py.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_generator_py.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "libturtle_tracker__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libgeometry_msgs__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libgeometry_msgs__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libstd_msgs__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libstd_msgs__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_generator_py.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libaction_msgs__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libaction_msgs__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libbuiltin_interfaces__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_typesupport_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/libunique_identifier_msgs__rosidl_generator_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/librosidl_runtime_c.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "/Users/riftka221/.local/share/mamba/envs/ros_env/lib/librcutils.dylib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 11,
+			"id" : "turtle_tracker__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "std_msgs::std_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "builtin_interfaces::builtin_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "geometry_msgs::geometry_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "action_msgs::action_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "unique_identifier_msgs::unique_identifier_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df"
+		}
+	],
+	"name" : "turtle_tracker__rosidl_generator_py",
+	"nameOnDisk" : "libturtle_tracker__rosidl_generator_py.dylib",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 29,
+			"id" : "turtle_tracker__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "turtle_tracker__py::@6a97952fdd50d93715d0"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/srv/_turtle_info_s.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/rosidl_generator_py/turtle_tracker/action/_turtle_info_action_s.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

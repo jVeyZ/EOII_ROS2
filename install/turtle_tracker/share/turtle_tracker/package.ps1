@@ -111,9 +111,8 @@ function colcon_package_source_powershell_script {
 $env:COLCON_CURRENT_PREFIX=(Get-Item $PSCommandPath).Directory.Parent.Parent.FullName
 
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/cmake_prefix_path.ps1"
+colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/dyld_library_path.ps1"
 colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/pythonpath.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/ros_package_path.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/catkin_pythonpath.ps1"
-colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/hook/pkg_config_path.ps1"
+colcon_package_source_powershell_script "$env:COLCON_CURRENT_PREFIX\share/turtle_tracker/local_setup.ps1"
 
 Remove-Item Env:\COLCON_CURRENT_PREFIX

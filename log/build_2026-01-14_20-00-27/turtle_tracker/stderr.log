@@ -1,0 +1,37 @@
+CMake Warning (dev) at /Users/riftka221/.local/share/mamba/envs/ros_env/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:33 (find_package)
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /Users/riftka221/.local/share/mamba/envs/ros_env/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:22 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'ld: warning: 
+directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+ld: warning: directory not found for option '-L/opt/homebrew/Cellar/libusb/1.0.27/lib'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_fastrtps_c.dylib'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_introspection_c.dylib'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_c.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_typesupport_c.dylib'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_fastrtps_c.cpython-311-darwin.so'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_introspection_c.cpython-311-darwin.so'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/python3.11/site-packages/turtle_tracker/turtle_tracker_s__rosidl_typesupport_c.cpython-311-darwin.so'
+/Users/riftka221/.local/share/mamba/envs/ros_env/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_py.dylib
+[cctools-port]: generating fake signature for '/Users/riftka221/code/upv/EOII/proyROS/install/turtle_tracker/lib/libturtle_tracker__rosidl_generator_py.dylib'

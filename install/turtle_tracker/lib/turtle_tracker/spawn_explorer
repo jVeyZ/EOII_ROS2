@@ -1,5 +1,0 @@
-#!/usr/bin/env python3
-from turtle_tracker.spawn_explorer import main
-
-if __name__ == '__main__':
-    main()

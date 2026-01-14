@@ -1,0 +1,2351 @@
+// generated from rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em
+// with input from turtle_tracker:action/TurtleInfoAction.idl
+// generated code does not contain a copyright notice
+#include "turtle_tracker/action/detail/turtle_info_action__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "turtle_tracker/action/detail/turtle_info_action__struct.hpp"
+
+#include <limits>
+#include <stdexcept>
+#include <string>
+#include "rosidl_typesupport_cpp/message_type_support.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+#include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+#include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_Goal & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: update_rate
+  cdr << ros_message.update_rate;
+  // Member: catch_distance
+  cdr << ros_message.catch_distance;
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_Goal & ros_message)
+{
+  // Member: update_rate
+  cdr >> ros_message.update_rate;
+
+  // Member: catch_distance
+  cdr >> ros_message.catch_distance;
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_Goal & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: update_rate
+  {
+    size_t item_size = sizeof(ros_message.update_rate);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: catch_distance
+  {
+    size_t item_size = sizeof(ros_message.catch_distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_Goal(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: update_rate
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: catch_distance
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_Goal;
+    is_plain =
+      (
+      offsetof(DataType, catch_distance) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_Goal__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Goal *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_Goal__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_Goal *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_Goal__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Goal *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_Goal__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_Goal(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_Goal__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_Goal",
+  _TurtleInfoAction_Goal__cdr_serialize,
+  _TurtleInfoAction_Goal__cdr_deserialize,
+  _TurtleInfoAction_Goal__get_serialized_size,
+  _TurtleInfoAction_Goal__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_Goal__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_Goal__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_Goal>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Goal__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_Goal)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Goal__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_Result & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: success
+  cdr << (ros_message.success ? true : false);
+  // Member: message
+  cdr << ros_message.message;
+  // Member: final_distance
+  cdr << ros_message.final_distance;
+  // Member: total_time
+  cdr << ros_message.total_time;
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_Result & ros_message)
+{
+  // Member: success
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.success = tmp ? true : false;
+  }
+
+  // Member: message
+  cdr >> ros_message.message;
+
+  // Member: final_distance
+  cdr >> ros_message.final_distance;
+
+  // Member: total_time
+  cdr >> ros_message.total_time;
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_Result & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: success
+  {
+    size_t item_size = sizeof(ros_message.success);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: message
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.message.size() + 1);
+  // Member: final_distance
+  {
+    size_t item_size = sizeof(ros_message.final_distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: total_time
+  {
+    size_t item_size = sizeof(ros_message.total_time);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_Result(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: success
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: message
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  // Member: final_distance
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: total_time
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_Result;
+    is_plain =
+      (
+      offsetof(DataType, total_time) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_Result__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Result *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_Result__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_Result *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_Result__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Result *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_Result__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_Result(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_Result__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_Result",
+  _TurtleInfoAction_Result__cdr_serialize,
+  _TurtleInfoAction_Result__cdr_deserialize,
+  _TurtleInfoAction_Result__get_serialized_size,
+  _TurtleInfoAction_Result__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_Result__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_Result__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_Result>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Result__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_Result)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Result__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_Feedback & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: turtle1_x
+  cdr << ros_message.turtle1_x;
+  // Member: turtle1_y
+  cdr << ros_message.turtle1_y;
+  // Member: turtle1_theta
+  cdr << ros_message.turtle1_theta;
+  // Member: explorer_x
+  cdr << ros_message.explorer_x;
+  // Member: explorer_y
+  cdr << ros_message.explorer_y;
+  // Member: explorer_theta
+  cdr << ros_message.explorer_theta;
+  // Member: turtle1_linear_vel
+  cdr << ros_message.turtle1_linear_vel;
+  // Member: turtle1_angular_vel
+  cdr << ros_message.turtle1_angular_vel;
+  // Member: explorer_linear_vel
+  cdr << ros_message.explorer_linear_vel;
+  // Member: explorer_angular_vel
+  cdr << ros_message.explorer_angular_vel;
+  // Member: distance
+  cdr << ros_message.distance;
+  // Member: timestamp
+  cdr << ros_message.timestamp;
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_Feedback & ros_message)
+{
+  // Member: turtle1_x
+  cdr >> ros_message.turtle1_x;
+
+  // Member: turtle1_y
+  cdr >> ros_message.turtle1_y;
+
+  // Member: turtle1_theta
+  cdr >> ros_message.turtle1_theta;
+
+  // Member: explorer_x
+  cdr >> ros_message.explorer_x;
+
+  // Member: explorer_y
+  cdr >> ros_message.explorer_y;
+
+  // Member: explorer_theta
+  cdr >> ros_message.explorer_theta;
+
+  // Member: turtle1_linear_vel
+  cdr >> ros_message.turtle1_linear_vel;
+
+  // Member: turtle1_angular_vel
+  cdr >> ros_message.turtle1_angular_vel;
+
+  // Member: explorer_linear_vel
+  cdr >> ros_message.explorer_linear_vel;
+
+  // Member: explorer_angular_vel
+  cdr >> ros_message.explorer_angular_vel;
+
+  // Member: distance
+  cdr >> ros_message.distance;
+
+  // Member: timestamp
+  cdr >> ros_message.timestamp;
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_Feedback & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: turtle1_x
+  {
+    size_t item_size = sizeof(ros_message.turtle1_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: turtle1_y
+  {
+    size_t item_size = sizeof(ros_message.turtle1_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: turtle1_theta
+  {
+    size_t item_size = sizeof(ros_message.turtle1_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: explorer_x
+  {
+    size_t item_size = sizeof(ros_message.explorer_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: explorer_y
+  {
+    size_t item_size = sizeof(ros_message.explorer_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: explorer_theta
+  {
+    size_t item_size = sizeof(ros_message.explorer_theta);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: turtle1_linear_vel
+  {
+    size_t item_size = sizeof(ros_message.turtle1_linear_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: turtle1_angular_vel
+  {
+    size_t item_size = sizeof(ros_message.turtle1_angular_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: explorer_linear_vel
+  {
+    size_t item_size = sizeof(ros_message.explorer_linear_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: explorer_angular_vel
+  {
+    size_t item_size = sizeof(ros_message.explorer_angular_vel);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: distance
+  {
+    size_t item_size = sizeof(ros_message.distance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: timestamp
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.timestamp.size() + 1);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_Feedback(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: turtle1_x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: turtle1_y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: turtle1_theta
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: explorer_x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: explorer_y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: explorer_theta
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: turtle1_linear_vel
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: turtle1_angular_vel
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: explorer_linear_vel
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: explorer_angular_vel
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: distance
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: timestamp
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_Feedback;
+    is_plain =
+      (
+      offsetof(DataType, timestamp) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_Feedback__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Feedback *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_Feedback__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_Feedback *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_Feedback__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_Feedback *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_Feedback__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_Feedback(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_Feedback__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_Feedback",
+  _TurtleInfoAction_Feedback__cdr_serialize,
+  _TurtleInfoAction_Feedback__cdr_deserialize,
+  _TurtleInfoAction_Feedback__get_serialized_size,
+  _TurtleInfoAction_Feedback__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_Feedback__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_Feedback__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_Feedback>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Feedback__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_Feedback)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_Feedback__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+namespace unique_identifier_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const unique_identifier_msgs::msg::UUID &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  unique_identifier_msgs::msg::UUID &);
+size_t get_serialized_size(
+  const unique_identifier_msgs::msg::UUID &,
+  size_t current_alignment);
+size_t
+max_serialized_size_UUID(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace unique_identifier_msgs
+
+// functions for turtle_tracker::action::TurtleInfoAction_Goal already declared above
+
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_SendGoal_Request & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.goal_id,
+    cdr);
+  // Member: goal
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.goal,
+    cdr);
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_SendGoal_Request & ros_message)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.goal_id);
+
+  // Member: goal
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.goal);
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_SendGoal_Request & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: goal_id
+
+  current_alignment +=
+    unique_identifier_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.goal_id, current_alignment);
+  // Member: goal
+
+  current_alignment +=
+    turtle_tracker::action::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.goal, current_alignment);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_SendGoal_Request(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: goal_id
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        unique_identifier_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_UUID(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: goal
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        turtle_tracker::action::typesupport_fastrtps_cpp::max_serialized_size_TurtleInfoAction_Goal(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_SendGoal_Request;
+    is_plain =
+      (
+      offsetof(DataType, goal) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_SendGoal_Request__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_SendGoal_Request *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_SendGoal_Request__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_SendGoal_Request *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_SendGoal_Request__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_SendGoal_Request *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_SendGoal_Request__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_SendGoal_Request(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_SendGoal_Request__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_SendGoal_Request",
+  _TurtleInfoAction_SendGoal_Request__cdr_serialize,
+  _TurtleInfoAction_SendGoal_Request__cdr_deserialize,
+  _TurtleInfoAction_SendGoal_Request__get_serialized_size,
+  _TurtleInfoAction_SendGoal_Request__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_SendGoal_Request__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_SendGoal_Request__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_SendGoal_Request>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal_Request__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_SendGoal_Request)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal_Request__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+namespace builtin_interfaces
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const builtin_interfaces::msg::Time &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  builtin_interfaces::msg::Time &);
+size_t get_serialized_size(
+  const builtin_interfaces::msg::Time &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Time(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace builtin_interfaces
+
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_SendGoal_Response & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: accepted
+  cdr << (ros_message.accepted ? true : false);
+  // Member: stamp
+  builtin_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.stamp,
+    cdr);
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_SendGoal_Response & ros_message)
+{
+  // Member: accepted
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.accepted = tmp ? true : false;
+  }
+
+  // Member: stamp
+  builtin_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.stamp);
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_SendGoal_Response & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: accepted
+  {
+    size_t item_size = sizeof(ros_message.accepted);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: stamp
+
+  current_alignment +=
+    builtin_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.stamp, current_alignment);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_SendGoal_Response(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: accepted
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: stamp
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        builtin_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_Time(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_SendGoal_Response;
+    is_plain =
+      (
+      offsetof(DataType, stamp) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_SendGoal_Response__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_SendGoal_Response *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_SendGoal_Response__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_SendGoal_Response *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_SendGoal_Response__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_SendGoal_Response *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_SendGoal_Response__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_SendGoal_Response(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_SendGoal_Response__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_SendGoal_Response",
+  _TurtleInfoAction_SendGoal_Response__cdr_serialize,
+  _TurtleInfoAction_SendGoal_Response__cdr_deserialize,
+  _TurtleInfoAction_SendGoal_Response__get_serialized_size,
+  _TurtleInfoAction_SendGoal_Response__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_SendGoal_Response__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_SendGoal_Response__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_SendGoal_Response>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal_Response__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_SendGoal_Response)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal_Response__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+#include "rmw/error_handling.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/service_type_support.h"
+#include "rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp"
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+static service_type_support_callbacks_t _TurtleInfoAction_SendGoal__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_SendGoal",
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_SendGoal_Request)(),
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_SendGoal_Response)(),
+};
+
+static rosidl_service_type_support_t _TurtleInfoAction_SendGoal__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_SendGoal__callbacks,
+  get_service_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_service_type_support_t *
+get_service_type_support_handle<turtle_tracker::action::TurtleInfoAction_SendGoal>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_SendGoal)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_SendGoal__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+// functions for unique_identifier_msgs::msg::UUID already declared above
+
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_GetResult_Request & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.goal_id,
+    cdr);
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_GetResult_Request & ros_message)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.goal_id);
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_GetResult_Request & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: goal_id
+
+  current_alignment +=
+    unique_identifier_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.goal_id, current_alignment);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_GetResult_Request(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: goal_id
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        unique_identifier_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_UUID(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_GetResult_Request;
+    is_plain =
+      (
+      offsetof(DataType, goal_id) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_GetResult_Request__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_GetResult_Request *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_GetResult_Request__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_GetResult_Request *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_GetResult_Request__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_GetResult_Request *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_GetResult_Request__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_GetResult_Request(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_GetResult_Request__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_GetResult_Request",
+  _TurtleInfoAction_GetResult_Request__cdr_serialize,
+  _TurtleInfoAction_GetResult_Request__cdr_deserialize,
+  _TurtleInfoAction_GetResult_Request__get_serialized_size,
+  _TurtleInfoAction_GetResult_Request__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_GetResult_Request__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_GetResult_Request__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_GetResult_Request>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult_Request__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_GetResult_Request)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult_Request__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+// functions for turtle_tracker::action::TurtleInfoAction_Result already declared above
+
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_GetResult_Response & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: status
+  cdr << ros_message.status;
+  // Member: result
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.result,
+    cdr);
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_GetResult_Response & ros_message)
+{
+  // Member: status
+  cdr >> ros_message.status;
+
+  // Member: result
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.result);
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_GetResult_Response & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: status
+  {
+    size_t item_size = sizeof(ros_message.status);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: result
+
+  current_alignment +=
+    turtle_tracker::action::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.result, current_alignment);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_GetResult_Response(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: status
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: result
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        turtle_tracker::action::typesupport_fastrtps_cpp::max_serialized_size_TurtleInfoAction_Result(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_GetResult_Response;
+    is_plain =
+      (
+      offsetof(DataType, result) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_GetResult_Response__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_GetResult_Response *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_GetResult_Response__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_GetResult_Response *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_GetResult_Response__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_GetResult_Response *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_GetResult_Response__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_GetResult_Response(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_GetResult_Response__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_GetResult_Response",
+  _TurtleInfoAction_GetResult_Response__cdr_serialize,
+  _TurtleInfoAction_GetResult_Response__cdr_deserialize,
+  _TurtleInfoAction_GetResult_Response__get_serialized_size,
+  _TurtleInfoAction_GetResult_Response__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_GetResult_Response__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_GetResult_Response__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_GetResult_Response>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult_Response__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_GetResult_Response)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult_Response__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+
+// already included above
+// #include "rmw/error_handling.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/service_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/service_type_support_decl.hpp"
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+static service_type_support_callbacks_t _TurtleInfoAction_GetResult__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_GetResult",
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_GetResult_Request)(),
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_GetResult_Response)(),
+};
+
+static rosidl_service_type_support_t _TurtleInfoAction_GetResult__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_GetResult__callbacks,
+  get_service_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_service_type_support_t *
+get_service_type_support_handle<turtle_tracker::action::TurtleInfoAction_GetResult>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_GetResult)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_GetResult__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif
+// already included above
+// #include <limits>
+// already included above
+// #include <stdexcept>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_cpp/message_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+
+// forward declaration of message dependencies and their conversion functions
+// functions for unique_identifier_msgs::msg::UUID already declared above
+
+// functions for turtle_tracker::action::TurtleInfoAction_Feedback already declared above
+
+
+namespace turtle_tracker
+{
+
+namespace action
+{
+
+namespace typesupport_fastrtps_cpp
+{
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_serialize(
+  const turtle_tracker::action::TurtleInfoAction_FeedbackMessage & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.goal_id,
+    cdr);
+  // Member: feedback
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.feedback,
+    cdr);
+  return true;
+}
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  turtle_tracker::action::TurtleInfoAction_FeedbackMessage & ros_message)
+{
+  // Member: goal_id
+  unique_identifier_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.goal_id);
+
+  // Member: feedback
+  turtle_tracker::action::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.feedback);
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+get_serialized_size(
+  const turtle_tracker::action::TurtleInfoAction_FeedbackMessage & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: goal_id
+
+  current_alignment +=
+    unique_identifier_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.goal_id, current_alignment);
+  // Member: feedback
+
+  current_alignment +=
+    turtle_tracker::action::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.feedback, current_alignment);
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_turtle_tracker
+max_serialized_size_TurtleInfoAction_FeedbackMessage(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+
+  // Member: goal_id
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        unique_identifier_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_UUID(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: feedback
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        turtle_tracker::action::typesupport_fastrtps_cpp::max_serialized_size_TurtleInfoAction_Feedback(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = turtle_tracker::action::TurtleInfoAction_FeedbackMessage;
+    is_plain =
+      (
+      offsetof(DataType, feedback) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static bool _TurtleInfoAction_FeedbackMessage__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_FeedbackMessage *>(
+    untyped_ros_message);
+  return cdr_serialize(*typed_message, cdr);
+}
+
+static bool _TurtleInfoAction_FeedbackMessage__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<turtle_tracker::action::TurtleInfoAction_FeedbackMessage *>(
+    untyped_ros_message);
+  return cdr_deserialize(cdr, *typed_message);
+}
+
+static uint32_t _TurtleInfoAction_FeedbackMessage__get_serialized_size(
+  const void * untyped_ros_message)
+{
+  auto typed_message =
+    static_cast<const turtle_tracker::action::TurtleInfoAction_FeedbackMessage *>(
+    untyped_ros_message);
+  return static_cast<uint32_t>(get_serialized_size(*typed_message, 0));
+}
+
+static size_t _TurtleInfoAction_FeedbackMessage__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_TurtleInfoAction_FeedbackMessage(full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+static message_type_support_callbacks_t _TurtleInfoAction_FeedbackMessage__callbacks = {
+  "turtle_tracker::action",
+  "TurtleInfoAction_FeedbackMessage",
+  _TurtleInfoAction_FeedbackMessage__cdr_serialize,
+  _TurtleInfoAction_FeedbackMessage__cdr_deserialize,
+  _TurtleInfoAction_FeedbackMessage__get_serialized_size,
+  _TurtleInfoAction_FeedbackMessage__max_serialized_size
+};
+
+static rosidl_message_type_support_t _TurtleInfoAction_FeedbackMessage__handle = {
+  rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
+  &_TurtleInfoAction_FeedbackMessage__callbacks,
+  get_message_typesupport_handle_function,
+};
+
+}  // namespace typesupport_fastrtps_cpp
+
+}  // namespace action
+
+}  // namespace turtle_tracker
+
+namespace rosidl_typesupport_fastrtps_cpp
+{
+
+template<>
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_EXPORT_turtle_tracker
+const rosidl_message_type_support_t *
+get_message_type_support_handle<turtle_tracker::action::TurtleInfoAction_FeedbackMessage>()
+{
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_FeedbackMessage__handle;
+}
+
+}  // namespace rosidl_typesupport_fastrtps_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cpp, turtle_tracker, action, TurtleInfoAction_FeedbackMessage)() {
+  return &turtle_tracker::action::typesupport_fastrtps_cpp::_TurtleInfoAction_FeedbackMessage__handle;
+}
+
+#ifdef __cplusplus
+}
+#endif

@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "turtle_tracker__py",
+		"source" : "/Users/riftka221/code/upv/EOII/proyROS/build/turtle_tracker/turtle_tracker__py"
+	}
+}

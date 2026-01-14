@@ -1,0 +1,25 @@
+
+# Response
+# Posición y orientación de turtle1
+float64 turtle1_x
+float64 turtle1_y
+float64 turtle1_theta
+
+# Posición y orientación de explorer
+float64 explorer_x
+float64 explorer_y
+float64 explorer_theta
+
+# Velocidades de turtle1
+float64 turtle1_linear_vel
+float64 turtle1_angular_vel
+
+# Velocidades de explorer
+float64 explorer_linear_vel
+float64 explorer_angular_vel
+
+# Distancia euclidiana entre ambas tortugas
+float64 distance
+
+# Timestamp de la información
+string timestamp

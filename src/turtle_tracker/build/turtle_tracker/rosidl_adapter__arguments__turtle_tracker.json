@@ -1,7 +1,0 @@
-{
-  "package_name": "turtle_tracker",
-  "non_idl_tuples": [
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker:srv/TurtleInfo.srv",
-    "/Users/riftka221/code/upv/EOII/proyROS/src/turtle_tracker:action/TurtleInfo.action"
-  ]
-}
