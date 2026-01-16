@@ -1,0 +1,437 @@
+================================================================================
+                    ENTORNOS OPERATIVOS PARA ROBÓTICA E
+                    INFORMÁTICA INDUSTRIAL (EOII)
+                    
+                    TRABAJO 2 - ROS2
+                    SISTEMA DE SEGUIMIENTO DE TORTUGAS EN TURTLESIM
+================================================================================
+
+Autores: Javier Veyrat Zaragozá y Julio Quesada Font
+
+================================================================================
+                              ÍNDICE
+================================================================================
+
+1. Descripción de la Implementación
+2. Resultados de Pruebas
+3. Problemas Encontrados y Soluciones
+4. Descripción de Interfaces Implementados
+5. Mapa de Nodos, Topics y Servicios
+
+================================================================================
+1. DESCRIPCIÓN DE LA IMPLEMENTACIÓN
+================================================================================
+
+El sistema implementado cumple con todas las especificaciones requeridas (E1-E6).
+A continuación se describe cada componente:
+
+1.1 E1 - GENERACIÓN DE TORTUGA PERSEGUIDORA (turtle_spawner.py)
+--------------------------------------------------------------------------------
+
+Se ha implementado un nodo que genera automáticamente la tortuga "explorer" 
+utilizando el servicio /spawn de TurtleSim.
+
+Características:
+- Posición inicial configurable mediante parámetros (default: x=2.0, y=2.0)
+- Validación de límites del espacio de simulación [0.5, 10.5]
+- Ajuste automático si la posición está fuera de límites
+- Logging informativo del proceso
+
+Algoritmo:
+1. Lee parámetros: explorer_x, explorer_y, explorer_theta
+2. Valida que la posición esté dentro de los límites
+3. Crea cliente del servicio /spawn
+4. Envía request asíncrono para crear la tortuga
+5. Confirma creación exitosa mediante callback
+
+
+1.2 E2 - SISTEMA DE SEGUIMIENTO (turtle_tracker.py)
+--------------------------------------------------------------------------------
+
+Implementa un algoritmo de control proporcional para que la tortuga "explorer"
+persiga a "turtle1".
+
+Ecuaciones de Control:
+- Distancia: d = √((x₁-x₂)² + (y₁-y₂)²)
+- Ángulo objetivo: θ_target = atan2(Δy, Δx)
+- Error angular: e_θ = θ_target - θ_explorer
+- Velocidad lineal: v = Kp_lin × d × max(0, cos(e_θ))
+- Velocidad angular: ω = Kp_ang × e_θ
+
+Parámetros configurables:
+- kp_linear: 1.5 (ganancia proporcional lineal)
+- kp_angular: 6.0 (ganancia proporcional angular)
+- max_linear_vel: 3.0 m/s
+- max_angular_vel: 4.0 rad/s
+- stop_distance: 0.3 (distancia para detenerse)
+
+El nodo:
+- Se suscribe a /turtle1/pose y /explorer/pose
+- Publica comandos de velocidad en /explorer/cmd_vel
+- Ejecuta bucle de control a 50 Hz
+
+
+1.3 E3 - SERVICIO DE INFORMACIÓN (turtle_info_service.py)
+--------------------------------------------------------------------------------
+
+Implementa el servidor del servicio personalizado "turtle_info".
+
+Información proporcionada:
+- Posición (x, y) de turtle1 y explorer
+- Orientación (theta) de ambas tortugas
+- Velocidades lineales y angulares actuales
+- Distancia euclidiana entre ambas tortugas
+- Timestamp de la consulta
+
+El servicio se define en srv/TurtleInfo.srv:
+
+    # Request (vacío)
+    ---
+    # Response
+    float64 turtle1_x
+    float64 turtle1_y
+    float64 turtle1_theta
+    float64 explorer_x
+    float64 explorer_y
+    float64 explorer_theta
+    float64 turtle1_linear_vel
+    float64 turtle1_angular_vel
+    float64 explorer_linear_vel
+    float64 explorer_angular_vel
+    float64 distance
+    string timestamp
+
+
+1.4 E4 - CLIENTE DE CONSULTA (turtle_info_client.py)
+--------------------------------------------------------------------------------
+
+Nodo cliente que invoca el servicio turtle_info periódicamente.
+
+Características:
+- Consulta el servicio cada segundo (configurable vía parámetro query_rate)
+- Muestra información estructurada y formateada en consola
+- Maneja errores si el servicio no está disponible
+- Verifica disponibilidad del servicio al iniciar
+
+Formato de salida:
+============================================================
+  INFORMACIÓN DE TORTUGAS - Consulta #42
+  Timestamp: 2026-01-16 15:30:45.123
+============================================================
+
+  TURTLE1 (Principal - Teleoperada)
+  ├── Posición:    x =   5.544  y =   5.544
+  ├── Orientación: θ =   0.785 rad ( 45.0°)
+  └── Velocidad:   lineal =  1.000  angular =  0.000
+
+ EXPLORER (Perseguidora)
+  ├── Posición:    x =   3.200  y =   4.100
+  ├── Orientación: θ =   0.650 rad ( 37.2°)
+  └── Velocidad:   lineal =  2.340  angular =  0.810
+
+ DISTANCIA ENTRE TORTUGAS:   2.789 unidades
+============================================================
+
+
+1.5 E5 - FICHERO LAUNCH (launch.xml)
+--------------------------------------------------------------------------------
+
+Fichero de lanzamiento XML que pone en marcha todo el sistema.
+
+Nodos lanzados:
+1. turtlesim_node (simulador)
+2. turtle_spawner.py (genera explorer)
+3. turtle_tracker.py (seguimiento)
+4. turtle_info_service.py (servidor del servicio)
+5. turtle_info_client.py (cliente de consulta)
+
+Parámetros configurables en el launch:
+- explorer_x: Posición X inicial (default: 2.0)
+- explorer_y: Posición Y inicial (default: 2.0)
+- explorer_theta: Orientación inicial (default: 0.0)
+- kp_linear: Ganancia lineal del control
+- kp_angular: Ganancia angular del control
+
+Uso con parámetros personalizados:
+    ros2 launch turtle_tracker launch.xml explorer_x:=5.0 explorer_y:=8.0
+
+
+1.6 E6 - ACTION SERVER (turtle_info_action_server.py)
+--------------------------------------------------------------------------------
+
+Convierte el servicio de información en un Action Server.
+
+Definición del Action (action/TurtleInfoAction.action):
+
+    # Goal
+    float64 update_rate      # Frecuencia de actualización (Hz)
+    float64 catch_distance   # Distancia para considerar "alcanzado"
+    ---
+    # Result
+    bool success
+    string message
+    float64 final_distance
+    float64 total_time
+    ---
+    # Feedback (igual que la respuesta del servicio)
+    float64 turtle1_x, turtle1_y, turtle1_theta
+    float64 explorer_x, explorer_y, explorer_theta
+    float64 turtle1_linear_vel, turtle1_angular_vel
+    float64 explorer_linear_vel, explorer_angular_vel
+    float64 distance
+    string timestamp
+
+Funcionamiento:
+1. Recibe goal con update_rate y catch_distance
+2. Envía feedback periódicamente con información de las tortugas
+3. Detecta cuando explorer alcanza a turtle1 (distancia < catch_distance)
+4. Espera 3 ciclos con velocidad ≈ 0 para confirmar
+5. Envía resultado final con estadísticas
+
+
+================================================================================
+2. RESULTADOS DE PRUEBAS
+================================================================================
+
+2.1 PRUEBA DE LANZAMIENTO DEL SISTEMA
+--------------------------------------------------------------------------------
+Comando: ros2 launch turtle_tracker launch.xml
+
+Resultado: EXITOSO
+- TurtleSim se inicia correctamente
+- Tortuga explorer aparece en posición (2.0, 2.0)
+- El tracker comienza a funcionar inmediatamente
+- El servicio turtle_info está disponible
+- El cliente muestra información cada segundo
+
+
+2.2 PRUEBA DE SEGUIMIENTO
+--------------------------------------------------------------------------------
+Comando: ros2 run turtlesim turtle_teleop_key
+
+Resultado: EXITOSO
+- Al mover turtle1 con las teclas, explorer la sigue
+- El seguimiento es suave gracias al control proporcional
+- Explorer se detiene cuando alcanza a turtle1
+- La velocidad es proporcional a la distancia
+
+
+2.3 PRUEBA DE PARÁMETROS PERSONALIZADOS
+--------------------------------------------------------------------------------
+Comando: ros2 launch turtle_tracker launch.xml explorer_x:=8.0 explorer_y:=8.0
+
+Resultado: EXITOSO
+- Explorer aparece en la posición especificada (8.0, 8.0)
+- El sistema valida que está dentro de límites
+
+
+2.4 PRUEBA DE VALIDACIÓN DE LÍMITES
+--------------------------------------------------------------------------------
+Comando: ros2 launch turtle_tracker launch.xml explorer_x:=15.0 explorer_y:=15.0
+
+Resultado: EXITOSO
+- El sistema detecta que está fuera de límites
+- Muestra warning y ajusta automáticamente a (10.5, 10.5)
+
+
+2.5 PRUEBA DEL ACTION SERVER
+--------------------------------------------------------------------------------
+Terminal 1: ros2 launch turtle_tracker launch_with_action.xml
+Terminal 2: ros2 run turtlesim turtle_teleop_key
+Terminal 3: ros2 run turtle_tracker turtle_info_action_client.py
+
+Resultado: EXITOSO
+- El Action Client envía goal correctamente
+- Recibe feedback periódico con información de tortugas
+- Cuando explorer alcanza a turtle1, el action completa
+
+
+================================================================================
+3. PROBLEMAS ENCONTRADOS Y SOLUCIONES
+================================================================================
+
+PROBLEMA 1: Normalización de ángulos
+--------------------------------------------------------------------------------
+Descripción: El error angular podía tener valores fuera de [-π, π] causando
+comportamiento errático en el seguimiento.
+
+Solución: Se implementó función de normalización:
+    def normalize_angle(self, angle):
+        while angle > math.pi:
+            angle -= 2.0 * math.pi
+        while angle < -math.pi:
+            angle += 2.0 * math.pi
+        return angle
+
+
+PROBLEMA 2: Oscilaciones al acercarse al objetivo
+--------------------------------------------------------------------------------
+Descripción: Explorer oscilaba al estar muy cerca de turtle1.
+
+Solución: 
+- Se añadió stop_distance para detenerse a cierta distancia
+- Se reduce velocidad lineal cuando hay mucho error angular usando cos(e_θ)
+
+
+================================================================================
+4. DESCRIPCIÓN DE INTERFACES IMPLEMENTADOS
+================================================================================
+
+4.1 SERVICIO: TurtleInfo.srv
+--------------------------------------------------------------------------------
+Ubicación: srv/TurtleInfo.srv
+
+Descripción: Servicio síncrono que proporciona información del estado de las
+tortugas.
+
+Estructura:
+┌─────────────────────────────────────────────────────────────┐
+│ REQUEST                                                     │
+├─────────────────────────────────────────────────────────────┤
+│ (vacío - no requiere parámetros)                            │
+├─────────────────────────────────────────────────────────────┤
+│ RESPONSE                                                    │
+├─────────────────────────────────────────────────────────────┤
+│ float64 turtle1_x          # Posición X de turtle1          │
+│ float64 turtle1_y          # Posición Y de turtle1          │
+│ float64 turtle1_theta      # Orientación de turtle1         │
+│ float64 explorer_x         # Posición X de explorer         │
+│ float64 explorer_y         # Posición Y de explorer         │
+│ float64 explorer_theta     # Orientación de explorer        │
+│ float64 turtle1_linear_vel # Vel. lineal turtle1            │
+│ float64 turtle1_angular_vel# Vel. angular turtle1           │
+│ float64 explorer_linear_vel# Vel. lineal explorer           │
+│ float64 explorer_angular_vel# Vel. angular explorer         │
+│ float64 distance           # Distancia entre tortugas       │
+│ string timestamp           # Marca temporal                 │
+└─────────────────────────────────────────────────────────────┘
+
+
+4.2 ACTION: TurtleInfoAction.action
+--------------------------------------------------------------------------------
+Ubicación: action/TurtleInfoAction.action
+
+Descripción: Action que proporciona información periódica de las tortugas
+hasta que explorer alcance a turtle1.
+
+Estructura:
+┌─────────────────────────────────────────────────────────────┐
+│ GOAL                                                        │
+├─────────────────────────────────────────────────────────────┤
+│ float64 update_rate    # Frecuencia de feedback (Hz)        │
+│ float64 catch_distance # Distancia para "alcanzar"          │
+├─────────────────────────────────────────────────────────────┤
+│ RESULT                                                      │
+├─────────────────────────────────────────────────────────────┤
+│ bool success           # Si explorer alcanzó a turtle1      │
+│ string message         # Mensaje descriptivo                │
+│ float64 final_distance # Distancia final                    │
+│ float64 total_time     # Tiempo total de ejecución          │
+├─────────────────────────────────────────────────────────────┤
+│ FEEDBACK                                                    │
+├─────────────────────────────────────────────────────────────┤
+│ (Mismos campos que TurtleInfo.srv response)                 │
+│ float64 turtle1_x, turtle1_y, turtle1_theta                 │
+│ float64 explorer_x, explorer_y, explorer_theta              │
+│ float64 turtle1_linear_vel, turtle1_angular_vel             │
+│ float64 explorer_linear_vel, explorer_angular_vel           │
+│ float64 distance                                            │
+│ string timestamp                                            │
+└─────────────────────────────────────────────────────────────┘
+
+
+4.3 MENSAJES UTILIZADOS (de paquetes estándar)
+--------------------------------------------------------------------------------
+
+turtlesim/msg/Pose:
+    float32 x, y         # Posición
+    float32 theta        # Orientación
+    float32 linear_velocity
+    float32 angular_velocity
+
+geometry_msgs/msg/Twist:
+    Vector3 linear       # Velocidad lineal (usamos x)
+    Vector3 angular      # Velocidad angular (usamos z)
+
+turtlesim/srv/Spawn:
+    float32 x, y, theta  # Posición inicial
+    string name          # Nombre de la tortuga
+    ---
+    string name          # Nombre asignado
+
+
+================================================================================
+5. MAPA DE NODOS, TOPICS Y SERVICIOS
+================================================================================
+
+El siguiente diagrama representa la arquitectura del sistema:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              ARQUITECTURA DEL SISTEMA                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                        NODOS                          COMUNICACIÓN
+                        ─────                          ────────────
+
+┌───────────────────┐
+│   turtlesim_node  │ ◄─────────────────────────────────────────────────────┐
+│   (simulador)     │                                                        │
+└─────────┬─────────┘                                                        │
+          │                                                                  │
+          │ Publica:                                                         │
+          │   /turtle1/pose ──────────────────────────────────┐              │
+          │   /explorer/pose ─────────────────────────────────┼──┐           │
+          │                                                   │  │           │
+          │ Servicios:                                        │  │           │
+          │   /spawn ◄────────────────────────────────────────┼──┼──────┐    │
+          │                                                   │  │      │    │
+               ▼                                                   │  │      │    │
+┌───────────────────┐                                         │  │      │    │
+│  turtle_spawner   │─────────────────────────────────────────┼──┼──────┘    │
+│  (genera explorer)│ Llama a /spawn                          │  │           │
+└───────────────────┘                                         │  │           │
+                                                              │  │           │
+┌───────────────────┐                                         │  │           │
+│  turtle_tracker   │◄────────────────────────────────────────┘  │           │
+│  (seguimiento)    │◄───────────────────────────────────────────┘           │
+└─────────┬─────────┘                                                        │
+          │                                                                  │
+          │ Publica:                                                         │
+          │   /explorer/cmd_vel ─────────────────────────────────────────────┘
+          │
+          ▼
+┌───────────────────┐
+│ turtle_info_      │◄── /turtle1/pose
+│ service           │◄── /explorer/pose
+│ (servidor)        │
+└─────────┬─────────┘
+          │
+          │ Ofrece servicio:
+          │   turtle_info ────────────────────────────────────┐
+          ▼                                                   │
+┌───────────────────┐                                         │
+│ turtle_info_      │◄────────────────────────────────────────┘
+│ client            │ Llama a turtle_info cada segundo
+│ (cliente)         │
+└───────────────────┘
+
+
+TOPICS:
+────────
+  /turtle1/pose        [turtlesim/msg/Pose]     - Pose de turtle1
+  /explorer/pose       [turtlesim/msg/Pose]     - Pose de explorer
+  /turtle1/cmd_vel     [geometry_msgs/msg/Twist]- Velocidad turtle1 (teleop)
+  /explorer/cmd_vel    [geometry_msgs/msg/Twist]- Velocidad explorer (tracker)
+
+SERVICIOS:
+──────────
+  /spawn               [turtlesim/srv/Spawn]    - Crear tortugas
+  turtle_info          [turtle_tracker/srv/TurtleInfo] - Info de tortugas
+
+ACTIONS (con launch_with_action.xml):
+─────────────────────────────────────
+  turtle_info_action   [turtle_tracker/action/TurtleInfoAction]
+
+================================================================================
+                              FIN DE LA MEMORIA
+================================================================================
